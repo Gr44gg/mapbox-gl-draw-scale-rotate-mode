@@ -1,8 +1,10 @@
-import * as Constants from '@mapbox/mapbox-gl-draw/src/constants';
-import doubleClickZoom from '@mapbox/mapbox-gl-draw/src/lib/double_click_zoom';
-import createSupplementaryPoints from '@mapbox/mapbox-gl-draw/src/lib/create_supplementary_points';
-import * as CommonSelectors from '@mapbox/mapbox-gl-draw/src/lib/common_selectors';
-import moveFeatures from '@mapbox/mapbox-gl-draw/src/lib/move_features';
+import MapboxDraw from "@mapbox/mapbox-gl-draw"
+
+// import * as Constants from '@mapbox/mapbox-gl-draw/src/constants';
+// import doubleClickZoom from '@mapbox/mapbox-gl-draw/src/lib/double_click_zoom';
+// import createSupplementaryPoints from '@mapbox/mapbox-gl-draw/src/lib/create_supplementary_points';
+// import * as CommonSelectors from '@mapbox/mapbox-gl-draw/src/lib/common_selectors';
+// import moveFeatures from '@mapbox/mapbox-gl-draw/src/lib/move_features';
 
 import { lineString, point } from '@turf/helpers';
 import bearing from '@turf/bearing';
@@ -12,6 +14,12 @@ import distance from '@turf/distance';
 import destination from '@turf/destination';
 import transformRotate from '@turf/transform-rotate';
 import transformScale from '@turf/transform-scale';
+
+const Constants = MapboxDraw.constants
+const doubleClickZoom = MapboxDraw.lib.doubleClickZoom
+const createSupplementaryPoints = MapboxDraw.lib.createSupplementaryPoints
+const CommonSelectors = MapboxDraw.lib.CommonSelectors
+const moveFeatures = MapboxDraw.lib.moveFeatures
 
 var rotate = require('./img/rotate.png');
 var scale = require('./img/scale.png');

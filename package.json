@@ -37,7 +37,7 @@
     "rollup-plugin-copy": "^3.3.0"
   },
   "peerDependencies": {
-    "@mapbox/mapbox-gl-draw": "1.2.0"
+    "@mapbox/mapbox-gl-draw": "1.4.3"
   },
   "dependencies": {
     "@turf/turf": "5.1.6"
